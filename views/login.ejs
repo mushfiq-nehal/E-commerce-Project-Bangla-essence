@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangla Essence</title>
+    <script src="https://kit.fontawesome.com/b795da5b50.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/book.png" type="image/png">
+</head>
+
+
+<div class="container">
+
+    <div class="form-box">
+        <img src="images/Share Reads .png" alt="">
+        <h1 id="title">Login</h1>
+
+        <% if (typeof errorMessage != "undefined") { %>
+            <div class="error-message" style="color: red;">
+                <%= errorMessage %>
+            </div>
+        <% } %>
+        
+        <form id="form" action="/" method="post">
+            <div class="input-group">
+                <div class="input-field" id="nameField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="email" placeholder="Email" id="emailInput" name="username" required>
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password" id="passwordInput" name="password" required>
+                </div>
+
+                <p>Forgot password? <a href="forgotPassword">Click Here!</a></p>
+            </div>
+
+            <div class="btn-field">
+                <button type="submit">Login</button>
+                <button type="button" onclick="location.href='signup'" class="disable">Sign Up</button>
+            </div>
+        
+        </form>
+    </div> 
+</div>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <!-- Tailwind CSS setup -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Daisy UI setup -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-orange-700 z-10 relative">
+        <div class="navbar flex justify-between items-center">
+            <a href="index.html" class="btn btn-ghost text-xl text-white">Bengal Essence</a>
+
+            <div class="lg:hidden">
+                <input type="checkbox" id="menu-toggle" class="hidden" />
+                <label tabindex="0" class="btn btn-ghost text-white" for="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </label>
+            </div>
+
+            <div class="hidden lg:flex flex-none">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="relative">
+                        <details class="dropdown">
+                            <summary class="font-semibold text-white">Products</summary>
+                            <ul class="bg-base-100 rounded-t-none p-2 mt-2 w-48 absolute z-20">
+                                <li><a>Nakshi katha</a></li>
+                                <li><a>TeraCota</a></li>
+                                <li><a>HandCraft</a></li>
+                                <li><a>Wooden</a></li>
+                                <li><a>Bamboo</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="relative">
+                        <details class="dropdown">
+                            <summary class="font-semibold text-white">Local Heritage</summary>
+                            <ul class="bg-base-100 rounded-t-none p-2 mt-2 w-48 absolute z-20">
+                                <li><a>Nakshi katha</a></li>
+                                <li><a>TeraCota</a></li>
+                                <li><a>HandCraft</a></li>
+                                <li><a>Wooden</a></li>
+                                <li><a>Bamboo</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a class="text-white">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="lg:hidden">
+        <div class="p-4">
+            <ul class="menu bg-base-100 w-full p-2 shadow rounded-box hidden" id="mobile-menu">
+                <li class="relative">
+                    <details class="dropdown">
+                        <summary class="font-semibold">Products</summary>
+                        <ul class="bg-base-100 p-2 mt-2 w-full rounded-md">
+                            <li><a>Nakshi katha</a></li>
+                            <li><a>TeraCota</a></li>
+                            <li><a>HandCraft</a></li>
+                            <li><a>Wooden</a></li>
+                            <li><a>Bamboo</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="relative">
+                    <details class="dropdown">
+                        <summary class="font-semibold">Local Heritage</summary>
+                        <ul class="bg-base-100 p-2 mt-2 w-full rounded-md">
+                            <li><a>Nakshi katha</a></li>
+                            <li><a>TeraCota</a></li>
+                            <li><a>HandCraft</a></li>
+                            <li><a>Wooden</a></li>
+                            <li><a>Bamboo</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a>Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+         
+        <!-- src bar -->
+
+        <div class="bg-gray-100 py-4">
+            <div class="flex justify-center items-center">
+                <form class="relative w-11/12 max-w-3xl">
+                    <input 
+                        type="text" 
+                        placeholder="Search your products..." 
+                        class="input input-bordered w-full h-14 text-lg pr-16 bg-orange-100"
+                    />
+                    <button 
+                        type="submit" 
+                        class="absolute inset-y-0 right-5 flex items-center text-gray-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 10a6 6 0 1112 0 6 6 0 01-12 0zm12 0l-4.35 4.35" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- home items -->
+       
+       
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 py-8">
+    <!-- Card 1 -->
+    <div class="card bg-base-100 w-full shadow-xl">
+        <figure class="px-10 pt-10">
+            <img
+            src="https://dialogue.earth/content/uploads/2022/11/20220730_Bangladesh-nakshi-kantha-elephant-motif_NazmunNaherShishir_TheThirdPole.jpg" alt="Album"  
+
+                alt="Shoes"
+                class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card bg-base-100 w-full shadow-xl">
+        <figure class="px-10 pt-10">
+            <img
+            src="https://dialogue.earth/content/uploads/2022/11/20220730_Bangladesh-nakshi-kantha-elephant-motif_NazmunNaherShishir_TheThirdPole.jpg" alt="Album"  
+                alt="Shoes"
+                class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card bg-base-100 w-full shadow-xl">
+        <figure class="px-10 pt-10">
+            <img
+            src="https://dialogue.earth/content/uploads/2022/11/20220730_Bangladesh-nakshi-kantha-elephant-motif_NazmunNaherShishir_TheThirdPole.jpg" alt="Album"  
+
+                alt="Shoes"
+                class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card bg-base-100 w-full shadow-xl">
+        <figure class="px-10 pt-10">
+            <img
+            src="https://dialogue.earth/content/uploads/2022/11/20220730_Bangladesh-nakshi-kantha-elephant-motif_NazmunNaherShishir_TheThirdPole.jpg" alt="Album"  
+
+                alt="Shoes"
+                class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card bg-base-100 w-full shadow-xl">
+        <figure class="px-10 pt-10">
+            <img
+            src="https://dialogue.earth/content/uploads/2022/11/20220730_Bangladesh-nakshi-kantha-elephant-motif_NazmunNaherShishir_TheThirdPole.jpg" alt="Album"  
+
+                alt="Shoes"
+                class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card bg-base-100 w-full shadow-xl">
+        <figure class="px-10 pt-10">
+            <img
+            src="https://dialogue.earth/content/uploads/2022/11/20220730_Bangladesh-nakshi-kantha-elephant-motif_NazmunNaherShishir_TheThirdPole.jpg" alt="Album"  
+
+                alt="Shoes"
+                class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+
+    </main>
+
+    <footer class="mt-8 p-4 bg-gray-800 text-white text-center">
+        <p>© 2024 Bengal Essence. All rights reserved.</p>
+    </footer>
+        
+    <!-- it is used for small screen hidden items -->
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuToggle.addEventListener("change", () => {
+            if (menuToggle.checked) {
+                mobileMenu.classList.remove("hidden");
+            } else {
+                mobileMenu.classList.add("hidden");
+            }
+        });
+    </script>
+
+</body>
+</html>

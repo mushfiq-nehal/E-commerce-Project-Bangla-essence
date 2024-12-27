@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+
+    <!-- Tailwind CSS setup -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Daisy UI setup -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-orange-700 z-10 relative">
+        <div class="navbar flex justify-between items-center">
+            <a class="btn btn-ghost text-xl text-white">Bengal Essence</a>
+
+            <div class="lg:hidden">
+                <input type="checkbox" id="menu-toggle" class="hidden" />
+                <label tabindex="0" class="btn btn-ghost text-white" for="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </label>
+            </div>
+
+            <div class="hidden lg:flex flex-none">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="relative">
+                        <details class="dropdown">
+                            <summary class="font-semibold text-white">Products</summary>
+                            <ul class="bg-base-100 rounded-t-none p-2 mt-2 w-48 absolute z-20">
+                                <li><a>Nakshi katha</a></li>
+                                <li><a>TeraCota</a></li>
+                                <li><a>HandCraft</a></li>
+                                <li><a>Wooden</a></li>
+                                <li><a>Bamboo</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="relative">
+                        <details class="dropdown">
+                            <summary class="font-semibold text-white">Local Heritage</summary>
+                            <ul class="bg-base-100 rounded-t-none p-2 mt-2 w-48 absolute z-20">
+                                <li><a>Nakshi katha</a></li>
+                                <li><a>TeraCota</a></li>
+                                <li><a>HandCraft</a></li>
+                                <li><a>Wooden</a></li>
+                                <li><a>Bamboo</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a class="text-white">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="lg:hidden">
+        <div class="p-4">
+            <ul class="menu bg-base-100 w-full p-2 shadow rounded-box hidden" id="mobile-menu">
+                <li class="relative">
+                    <details class="dropdown">
+                        <summary class="font-semibold">Products</summary>
+                        <ul class="bg-base-100 p-2 mt-2 w-full rounded-md">
+                            <li><a>Nakshi katha</a></li>
+                            <li><a>TeraCota</a></li>
+                            <li><a>HandCraft</a></li>
+                            <li><a>Wooden</a></li>
+                            <li><a>Bamboo</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="relative">
+                    <details class="dropdown">
+                        <summary class="font-semibold">Local Heritage</summary>
+                        <ul class="bg-base-100 p-2 mt-2 w-full rounded-md">
+                            <li><a>Nakshi katha</a></li>
+                            <li><a>TeraCota</a></li>
+                            <li><a>HandCraft</a></li>
+                            <li><a>Wooden</a></li>
+                            <li><a>Bamboo</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a>Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="py-8 px-4">
+        <div class="card card-side bg-base-200 shadow-xl p-4 h-[525px] rounded-lg flex flex-col md:flex-row">
+            <div class="w-full md:w-1/2 flex-1 bg-gray-300 rounded-lg overflow-hidden mb-4 md:mb-0">
+                <img src="https://dialogue.earth/content/uploads/2022/11/20220730_Bangladesh-nakshi-kantha-elephant-motif_NazmunNaherShishir_TheThirdPole.jpg" alt="Album" class="w-full h-full object-cover" />
+            </div>
+            <div class="card-body flex flex-col justify-center p-4 flex-1 mt-12 ml-10 mr-12">
+                <h2 class="card-title text-4xl font-semibold text-left">About HandCraft</h2>
+                <p class="text-gray-700 text-2xl text-left mt-8">
+                    Handcrafted goods promote sustainability by emphasizing 
+                    natural materials and supporting local artisans. These 
+                    products are eco-friendly and respect both the environment 
+                    and cultural traditions.
+                    
+                </p>
+                <div class="card-actions mt-4 items-center md:justify-start">
+                    <form action="home.html">
+                        <button type="submit" class="btn bg-orange-700 text-white hover:bg-gray-800">
+                            Start Shopping
+                        </button>
+                    </form>
+                    <form action="login.html">
+                    <button type="submit" class="btn bg-orange-700 text-white hover:bg-gray-800 ml-2">
+                        Start Selling
+                    </button>
+                </form>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-8 p-4 bg-gray-800 text-white text-center">
+        <p>© 2024 Bengal Essence. All rights reserved.</p>
+    </footer>
+        
+    <!-- it is used for small screen hidden items -->
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuToggle.addEventListener("change", () => {
+            if (menuToggle.checked) {
+                mobileMenu.classList.remove("hidden");
+            } else {
+                mobileMenu.classList.add("hidden");
+            }
+        });
+    </script>
+
+</body>
+</html>
